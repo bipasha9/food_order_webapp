@@ -1,0 +1,50 @@
+{
+  "name": "new1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "cd client && npm run start",
+    "server-install": "npm install",
+    "client-install": "cd client && npm install",
+    "install-all": "concurrently \"npm run server-install\" \"npm run client-install\"",
+    "dev": "concurrently \"npm run server\" ",
+    "build": "npm run server-install && npm run client-install && npm run dev",
+    "production:build": "cd client && npm run build",
+    "production:start": "cd client && npm run start",
+    "production": "run-p production:**server",
+    "prod": "pm2 startOrReload prod-ecosystem.json --env production",
+    "heroku-postbuild": "cd client && npm install && npm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cloudinary": "^1.25.1",
+    "concurrently": "^6.1.0",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "dotenv": "^9.0.2",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.2.1",
+    "google-auth-library": "^7.3.0",
+    "googleapis": "^82.0.0",
+    "http2": "^3.3.7",
+    "joi": "^17.4.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.12.8",
+    "node-fetch": "^2.6.1",
+    "nodemailer": "^6.6.3",
+    "path": "^0.12.7",
+    "pdfmake": "^0.2.2",
+    "twilio": "^3.71.1",
+    "uuid": "^8.3.2",
+    "web-push": "^3.4.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}

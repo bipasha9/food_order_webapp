@@ -1,0 +1,57 @@
+.load-page{
+    background: rgb(255, 255, 255);
+    overflow: hidden;
+    
+}
+.loader{
+    
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    
+}
+.loader div{
+    
+    width: calc(100% - 15px);
+    height: calc(100% - 15px);
+    border: 2px solid #fff;
+    border-top: 2px solid rgb(119, 119, 119);
+    border-radius: 50%;
+    animation: rotate 7s linear infinite alternate-reverse;
+}
+@keyframes rotate{
+    50%{
+        transform: rotate(80deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.loading-new{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.loading-new svg{
+    font-size: 5px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    animation: text 1s ease-in-out infinite;
+}
+@keyframes text{
+    50%{ opacity: 0.1;}
+}
+.loading-new polygon{
+    stroke-dasharray: 22;
+    stroke-dashoffset: 1;
+    animation: dash 4s cubic-bezier(0.455, 0.03, 0.515, 0.955)
+    infinite alternate-reverse;
+}
+@keyframes dash{
+    to{stroke-dashoffset: 234;}
+}

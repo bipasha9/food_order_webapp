@@ -1,0 +1,126 @@
+
+.contact_us{
+    
+    position: fixed;
+    width: 99%;
+    height: 100%;
+    background-color: rgb(235, 231, 231);
+    
+}
+.contact_us p{
+    color: rgb(58, 58, 58);
+}
+.contact_us h2{
+    text-align: center;
+    margin-top: 10px;
+    color: rgb(58, 58, 58);
+}
+
+.wave{
+  position: fixed;
+  bottom: 0;
+  width: 99%;
+}
+.facebook{
+    position: fixed;
+        width: 50px;
+        height: 50px;
+        margin-top: 1rem;
+        left:43%;
+        background-color: #576db4;
+        color: #FFF;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 25px;
+        box-shadow: 2px 2px 3px #999;
+        z-index: 100;
+   
+}
+.facebook-icon{
+    margin-top: 15px;
+}
+.instagram{
+    position: fixed;
+        width: 50px;
+        height: 50px;
+        margin-top: 1rem;
+        right:43%;
+        background-color: #c22559;
+        color: #FFF;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 25px;
+        box-shadow: 2px 2px 3px #999;
+        z-index: 100;
+   
+}
+.instagram-icon{
+    margin-top: 14px;
+}
+.return_policy{
+    position: fixed;
+    width: 99%;
+    height: 100%;
+    background-color: rgb(235, 231, 231);
+}
+.return_policy h2{
+    text-align: center;
+    margin-top: 10px;
+    color: rgb(58, 58, 58);
+}
+.return_policy p{
+    text-align: center;
+    margin-top: 10px;
+    width: 60%;
+    margin-left: 20%;
+    font-size: large;
+    color: rgb(58, 58, 58);
+  
+}
+.return_policy ul{
+    text-align: center;
+    font-size: 22px;
+    font-weight: 500;
+    color: rgb(58, 58, 58);
+}
+.return_policy ul li{
+    font-size: large;
+    font-weight: normal;
+    color: rgb(58, 58, 58);
+}
+.term p{
+   position: relative;
+    margin-top: 10px;
+    width: 60%;
+    margin-left: 20%;
+    font-size: 15px;
+    justify-content: center;
+  
+
+}
+.term p{
+    color: rgb(58, 58, 58);
+}
+.return_policy{
+    color: rgb(58, 58, 58);
+}
+
+
+/* media quary */
+@media screen and (max-width: 767px) {
+    .facebook{
+        left:30%;
+    }
+    .instagram{
+        right:30%;
+    }
+    .term p{
+        width: 90%;
+        margin-top: 10px;
+        margin-left: 5%;
+       
+        font-size: large;
+      
+    
+    }
+}
